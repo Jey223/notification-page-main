@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="tailwindstyle.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&display=swap');
+  </style>
+
+</head>
+
+<body class="h-full w-screen my-[50px] md:flex md:justify-center md:items-center bg-white md:bg-very-light-grayish-blue m-[0] p-[0] font-myFont">
+  <main class="w-full md:w-[80%] lg:w-[50%] md:bg-white px-[15px] md:py-[20px] md:px-[30px] md:rounded-[10px]">
+    <section class="flex justify-between items-center md:h-10 mb-[20px]">
+      <div class="flex items-center font-extrabold"><h1 class="text-[16px] md:text-[25px] text-very-dark-blue mr-[8px] md:mr-[12px] "> Notifications </h1> <div class="flex items-center justify-center w-[25px] md:w-[30px] h-[22px] md:h-[25px] p-[5px] bg-blue text-white rounded-[5px] shadow-[0_0_2px_0px] shadow-blue">4</div></div>
+      <div class="text-dark-grayish-blue text-[14px] md:text-[20px] cursor-pointer">Mark all as read</div>
+    </section>
+
+    <section>
+      <div class="w-full h-full flex px-[12px] md:px-[18px] py-[6px] md:py-[10px] bg-light-grayish-blue-1 rounded-[5px] mb-[10px] shadow-[0_0_1px_1px] shadow-light-grayish-blue-1">
+        <div class="cursor-pointer w-[30px] h-[30px] md:w-10 md:h-10 mr-[10px] md:mr-[20px] rounded-[50%] flex-none"><img src="./assets/images/avatar-mark-webber.webp" alt="mark webber" class="object-cover"></div>
+        <div class=" text-[12px] md:text-[14px]">
+          <h2 class="text-very-dark-blue font-extrabold cursor-pointer">Mark Webber <span class="font-light text-dark-grayish-blue ml-[3px] md:ml-[5px] cursor-auto">reacted to your recent post <a href="#" class="font-extrabold text-dark-grayish-blue ml-[3px] md:ml-[5px] cursor-pointer">My first tournament today!</a></span> <span class="inline-block bg-red h-[10px] w-[10px] rounded-[50%] mt-[3px]"></span></h2>
+          <p class="text-grayish-blue">1m ago</p>
+        </div>
+      </div>
+  
+      <div class=" w-full h-full flex px-[12px] md:px-[18px] py-[6px] md:py-[10px] bg-light-grayish-blue-1 rounded-[5px] mb-[10px] shadow-[0_0_1px_1px] shadow-light-grayish-blue-1">
+        <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[10px] md:mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-angela-gray.webp" alt="angela gray" class="object-cover"></div>
+        <div class="text-[12px] md:text-[14px]">
+          <h2 class="text-very-dark-blue font-extrabold cursor-pointer">Angela Gray <span class="font-light text-dark-grayish-blue ml-[3px] md:ml-[5px] cursor-auto">followed you</span><span class="inline-block bg-red h-[10px] w-[10px] rounded-[50%] mt-[3px]"></span></h2>
+          <p class="text-grayish-blue">5m ago</p>
+        </div>
+      </div>
+     
+      <div class="w-full h-full flex px-[12px] md:px-[18px] py-[6px] md:py-[10px] bg-light-grayish-blue-1 rounded-[5px] mb-[10px] shadow-[0_0_1px_1px] shadow-light-grayish-blue-1">
+        <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[10px] md:mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson" class="object-cover"></div>
+        <div class="text-[12px] md:text-[14px]">
+          <h2 class="text-very-dark-blue font-extrabold cursor-pointer"> Jacob Thompson <span class="font-light text-dark-grayish-blue ml-[3px] md:ml-[5px] cursor-auto"> has joined your group <a href="#" class="font-extrabold text-blue ml-[3px] md:ml-[5px]">Chess Club</a></span><span class="inline-block bg-red h-[10px] w-[10px] rounded-[50%] mt-[3px] ml-[5px]"></span></h2>
+          <p class="text-grayish-blue"> 1 day ago</p>
+        </div>
+      </div>
+  
+      <div class="w-full h-full mb-[10px] bg-white py-[6px] md:py-[10px] px-[12px] md:px-[18px] flex">
+        <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[10px] md:mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin" class="object-cover"></div>
+        <div class="text-[12px] md:text-[14px]">
+          <h2 class="mr-[5px] text-very-dark-blue font-extrabold text-[12px] md:text-[15px] cursor-pointer"> Rizky Hasanuddin <span class="font-light text-dark-grayish-blue ml-[5px] cursor-auto"> sent you a private message</span></h2>
+          <p class="text-grayish-blue"> 5 days ago</p>
+          <div class="border-text-grayish-blue border-solid border-[1px] p-[15px] mt-[10px] rounded-[4px]">
+            <p class="cursor-pointer text-dark-grayish-blue">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex justify-between px-[12px] md:px-[18px] py-[6px] md:py-[10px] bg-light-grayish-blue-1 rounded-[5px] mb-[10px] shadow-[0_0_1px_1px] shadow-light-grayish-blue-1">
+        <div class="flex">
+          <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[10px] md:mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith" class="object-cover"></div>
+          <div class="text-[12px] md:text-[14px]">
+              <h2 class="mr-[5px] text-very-dark-blue font-extrabold cursor-pointer"> Kimberly Smith  <span class="font-light text-dark-grayish-blue ml-[5px] cursor-auto"> commented on your picture</span></h2>
+              <p class="text-grayish-blue"> 1 week ago</p>
+          </div>
+        </div>
+        <div class="flex-none w-[40px] h-[40px] rounded-[10px] cursor-pointer"><img src="./assets/images/image-chess.webp" alt="chess" class="object-cover"></div>
+      </div>
+      
+      <div class="flex px-[12px] md:px-[18px] py-[6px] md:py-[10px] mb-[10px]">
+        <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-nathan-peterson.webp" alt="mark webber" class="object-cover"></div>
+        <div class="text-[12px] md:text-[14px]">
+          <h2 class="mr-[5px] text-very-dark-blue font-extrabold cursor-pointer">Nathan Peterson <span class="font-light text-dark-grayish-blue ml-[5px] cursor-auto">reacted to your recent post  <a href="#" class="font-extrabold text-dark-grayish-blue ml-[5px]">5 end-game strategies to increase your win rate</a></span></h2>
+          <p class="text-grayish-blue"> 2 weeks ago</p>
+        </div>
+      </div>
+
+      <div class="flex px-[18px] py-[10px]">
+        <div class="cursor-pointer flex-none w-[30px] h-[30px] md:w-10 md:h-10 mr-[20px] rounded-[50%]"><img src="./assets/images/avatar-anna-kim.webp" alt="mark webber" class="object-cover"></div>
+        <div class="text-[12px] md:text-[14px]">
+          <h2 class="mr-[5px] text-very-dark-blue font-extrabold cursor-pointer">Anna Kim<span class="font-light text-dark-grayish-blue ml-[5px] cursor-auto">left the group<a href="#" class="font-extrabold text-blue ml-[5px]">Chess Club</a></span></h2>
+          <p class="text-grayish-blue"> 2 weeks ago</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
