@@ -23,33 +23,26 @@ const readAll = () => {
 }
 
 
+markAll.addEventListener('click', readAll);
+
 msgBoxs.forEach((msgBox) => {
-    const aTags = msgBox.querySelectorAll('a');
     const redDot = msgBox.querySelector('.red-dot')
-
-    aTags.forEach ((aTag) => {
-        aTag.addEventListener('click', () => {
-            if ((msgBox.style.backgroundColor != 'white') && (msgBox.style.boxShadow != 'none')){
-                msgBox.style.backgroundColor = 'white';
-                msgBox.style.boxShadow = 'none';
-                if(redDot) {
-                    redDot.style.display = 'none';
-                    console.log(redDot);
-                }
-                const numMsgValue = numMsg.innerHTML;
-                const num = parseInt(numMsgValue);
-                const numValue = num - 1;
-                console.log(numValue)
-                numMsg.textContent = numValue;
+    msgBox.addEventListener('click', function() {
+        if ((msgBox.style.backgroundColor != 'white') && (msgBox.style.boxShadow != 'none')){
+            msgBox.style.backgroundColor = 'white';
+            msgBox.style.boxShadow = 'none';
+            if(redDot) {
+                redDot.style.display = 'none';
+                console.log(redDot);
             }
-           
-
-        });
-    })
-    
+            const numMsgValue = numMsg.innerHTML;
+            const num = parseInt(numMsgValue);
+            const numValue = num - 1;
+            console.log(numValue)
+            numMsg.textContent = numValue;
+        }
+    });
 })
-
-markAll.addEventListener('click', readAll)
 
 // if (!('Notification' in window)) {
 //     alert('This browser does not suppoert system notification');
