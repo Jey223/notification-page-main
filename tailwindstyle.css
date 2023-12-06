@@ -816,6 +816,16 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.hover\:bg-light-grayish-blue-2:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(205 33% 90% / var(--tw-bg-opacity));
+}
+
+.hover\:text-blue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(219 85% 26% / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:ml-\[5px\] {
     margin-left: 5px;
